@@ -6,7 +6,10 @@ def fibonacci_iteratively
   for i in 1..number
     sum = first_number + second_number
     result.push(sum)
+    first_number = second_number
+    second_number = sum
   end
+  p result
 end
 
 fibonacci_iteratively()
