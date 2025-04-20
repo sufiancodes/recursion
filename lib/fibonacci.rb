@@ -14,10 +14,9 @@ end
 
 # fibonacci_iteratively()
 
-def fibonacci_recursively(number)
-  array = []
-  return number if number < 2
-  return fibonacci_recursively(number - 1) + fibonacci_recursively(number - 2)
+def fibonacci_recursively(number, array = [0, 1])
+  return array if array.length == number
+  
 end
 
 p fibonacci_recursively(5)
