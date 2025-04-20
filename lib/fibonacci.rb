@@ -12,8 +12,13 @@ def fibonacci_iteratively
   p result
 end
 
-fibonacci_iteratively()
+# fibonacci_iteratively()
 
-def fibonacci_recursively
-  
+def fibonacci_recursively(number)
+  if number < 2
+    return number
+  end
+  return fibonacci_recursively(number - 1) + fibonacci_recursively(number - 2)
 end
+
+p fibonacci_recursively(5)
