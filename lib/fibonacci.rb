@@ -15,9 +15,8 @@ end
 # fibonacci_iteratively()
 
 def fibonacci_recursively(number)
-  if number < 2
-    return number
-  end
+  array = []
+  return number if number < 2
   return fibonacci_recursively(number - 1) + fibonacci_recursively(number - 2)
 end
 
