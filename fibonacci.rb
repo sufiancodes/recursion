@@ -21,7 +21,3 @@ def fibonacci_recursively(number, array = [0, 1])
 end
 
 p fibonacci_recursively(5)
-
-def merge_sort(array)
-  
-end
