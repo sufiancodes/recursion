@@ -1,14 +1,11 @@
 def merge_sort(array)
-  find_mid(array)
-  
-end
-def find_mid(array)
+  if array.length == 1
+    return array
+  end
   mid = array.length/2
   left_half = array[0...mid]
   right_half = array[mid..-1]
+  merge_sort(left_half)
+  merge_sort(right_half)
+
 end
-# array = [1,2,3,4,5,6]
-# mid = array.length/2
-# left_half = array[0...mid]
-# right_half = array[mid..-1]
-# p right_half
