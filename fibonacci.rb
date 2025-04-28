@@ -12,12 +12,12 @@ def fibonacci_iteratively
   p result
 end
 
-# fibonacci_iteratively()
 
 def fibonacci_recursively(number, array = [0, 1])
+  puts 'This was printed recursively'
   return array if array.length == number
   array.push(array[-1] + array [-2])
   fibonacci_recursively(number, array)
 end
 
-p fibonacci_recursively(5)
+p fibonacci_recursively(8)
